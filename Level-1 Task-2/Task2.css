@@ -1,0 +1,80 @@
+html {
+    background-image: url(https://cdn.glitch.global/41ba7756-5b71-4084-80ed-53017794d51c/nature.gif?v=17064251032);
+    background-size: cover !important;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.head-text {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+}
+
+.button-text {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    max-width: 300px;
+}
+
+.display {
+    grid-column: span 4;
+    text-align: right;
+    padding: 10px;
+    background-color: #f0f0f0;
+    box-shadow: inset 0 0 10px rgb(169, 169, 169);
+    border-radius: 5px;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+}
+
+button {
+    padding: 15px;
+    font-size: 1rem;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease, border-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-color: black;
+}
+
+button:hover {
+    background-color: #d4d4d4;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-color: red;
+}
+
+button:active {
+    background-color: #bfbfbf;
+    transform: translateY(0);
+    box-shadow: 0 2px 4px orange;
+    border-color: blue;
+}
+
+@media only screen and (min-width: 653px) and (max-width: 654px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 50%;
+        font-family: 'Roboto', sans-serif;
+    }
+}
